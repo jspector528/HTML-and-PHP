@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<!--Name: Jared Spector
+	Filename: Spector_Lab9.html
+	Blackboard Username: Jaspector
+	Class Section: CTI.110.0071
+	Purpose:
+-->
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<style>
+      thead > tr > th {
+	  border: 2px solid #800080;
+	  font-family: Comic Sans MS;
+	  background-color:black;color:white;
+	  }
+	  
+	  tfoot > tr > td {
+	  border: 2px solid #800080;
+	  font-family: Comic Sans MS;
+	  background-color:black;color:white;
+	  }
+	  
+	  tbody > tr >td {
+	  border:1px solid #800080;
+	  text-align:center;}
+	  
+	  .month{
+	  text-align: left;}
+	  
+	  .hot{
+	  color: red;
+	  font-weight: bold;
+	  background-color: rgba(255,0,0,0.1);}
+	  
+	  .cold{
+	  color: blue;
+	  font-weight: bold;
+	  background-color: rgba(0,0,255,0.1);}
+	  </style>
+	<title> <h1>Lesson 7 Creating a Table</h1></title>
+	</head>
+	<body>
+	<header>
+	     <h1>Monthly Temperatures</h1>
+	     <h2>Raleigh, North Carolina</h2>
+	</header>
+	<table>
+		      <caption>10-year temperature averages for Raleigh, 2010-2019</caption>
+	      <thead>
+		<tr>
+		    <th>MONTH</th>
+		    <th>High°F</th>
+			<th>Low°F</th>
+		</tr>
+	      </thead>
+	      <tbody>
+		 <tr>
+			<th colspan=3> Winter Season</th>
+		 </tr>
+		 <tr>
+		<td class='month'>December</td>
+			<td>56</td>
+			<td>37</td>
+		 </tr>
+		 <tr>
+		<td class='month'>January</td>
+			<td>51</td>
+			<td class='cold'>31</td>
+		 </tr>
+		 <tr>
+		<td class='month'>February</td>
+			<td>55</td>
+			<td>34</td>
+		 </tr>
+		  <tr>
+			<th colspan=3> Spring Season</th>
+		 </tr>
+		 <tr>
+		<td class='month'>March</td>
+			<td>62</td>
+			<td>40</td>
+		 </tr>
+		 <tr>
+		<td class='month'>April</td>
+			<td>73</td>
+			<td>50</td>
+		 </tr>
+		 <tr>
+		<td class='month'>May</td>
+			<td>82</td>
+			<td>60</td>
+		 </tr>
+		  <tr>
+			<th colspan=3> Summer Season</th>
+		 </tr>
+		 <tr>
+		<td class='month'>June</td>
+			<td>89</td>
+			<td>67</td>
+		 </tr>
+		 <tr>
+		<td class='month'>July</td>
+			<td class='hot'>92</td>
+			<td>71</td>
+		 </tr>
+		 <tr>
+		<td class='month'>August</td>
+			<td>89</td>
+			<td>70</td>
+		 </tr>
+		  <tr>
+			<th colspan=3> Autumn Season</th>
+		 </tr>
+		 <tr>
+		<td class='month'>September</td>
+			<td>84</td>
+			<td>65</td>
+		 </tr>
+		 <tr>
+		<td class='month'>October</td>
+			<td>73</td>
+			<td>52</td>
+		 </tr>
+		 <tr>
+		<td class='month'>November</td>
+			<td>61</td>
+			<td>40</td>
+		 </tr>	
+	      </tbody>
+	      <tfoot>
+		<tr>
+		      <th colspan=3> 12 Monthe Average Temperature (Year)</th>
+		</tr>
+		<tr>
+		     <td>Average</td>
+				<td>72</td>
+				<td>51</td>
+		</tr>
+	     </tfoot>
+	</table>
+	</body>
+</html>
+	

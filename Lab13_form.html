@@ -1,0 +1,64 @@
+<!doctype html>
+<html Lang="en">
+	<head>
+		<!--Name: Group 5 Jared Spector, Jade Oakes, Tiago Mendes, Marcella Mendes
+		Filename: Lab13_Form.html
+		Class Section: CTI.110.0071
+		-->
+		<meta charset="utf-8" />
+		 <meta name="viewport" content= "width=device-wideth, initial-scale=1.0">
+	
+		<title>L13 Concert Event Cost</title>
+		<link rel="stylesheet" href="Spector_lab9_proj.css">
+	</head>
+
+
+<h1>Purchasing Form</h1>
+
+
+
+<form id="concertform" action="Lab13.php" method="post">
+					<fieldset>
+						<legend class='heading'>User Information</legend>
+							<label id="name">Name</label>
+							<input id="nameinput" type="text" required>
+							<label id="number">Phone Number</label>
+							<input id="numberinput" type="text" required> 
+					</fieldset>
+					<fieldset>
+						<legend class='heading'>Location</legend>
+							<label id="location">Location</label>
+								<select id="locationselect">
+									<option value="RedHat">Red Hat Amphitheater</option>
+									<option value="criterion">The Criterion</option>
+									<option value="pavillion">The Pavillion</option>
+								</select>
+					</fieldset>
+					<fieldset>
+						<legend class='heading'>Tickets</legend>
+							<input type="checkbox" id="adult">
+							<label for="adult">Adult</label>
+							<input type="checkbox" id="child" value="child" name="child">
+							<label for="child">Child</label>
+							<br>
+							<label for="adulttix">How many adult tickets?(Minimum is 1)</label>
+							<input type="number" id="adulttix" min="1" required>
+							<label for="childtix">How many child tickets?</label>
+							<input type="number" id="childtix" required>
+							
+					</fieldset>
+					<fieldset>
+						<legend class='heading'>Dates</legend>
+							<input type="radio" id="oct28" name="oct28" value="oct28"> 
+							<label for="oct28">October 28, 2021</label>
+							<input type="radio" id="nov02" name="nov02" value="nov02"> 
+							<label for="nov02">November 2, 2021</label>	
+							<input type="radio" id="nov06" name="nov06" value="nov06"> 
+							<label for="nov06">November 6, 2021</label>
+					</fieldset>
+					
+
+			<input type="submit">
+			<input type="reset" value="Reset"> 
+			</form>
+			<a href="Spector_Lab9_Proj.html">Return to main page</a>
